@@ -1,0 +1,24 @@
+server:
+  port: 9191
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        format-sql: true
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+#file:      
+#  upload:
+#    location: C:\Users\User\Documents\Harbinger\image
+      
+  
